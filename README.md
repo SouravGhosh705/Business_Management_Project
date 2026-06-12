@@ -40,19 +40,24 @@ The application uses **Thymeleaf** for server-side HTML templates and supports b
 Place your screenshots in the `src/main/resources/static/Images/` folder and update the file names below.
 
 ### Home Page
-![Home Page](src/main/resources/static/Images/home-page.png)
+<img width="1902" height="950" alt="Screenshot 2026-06-12 211552" src="https://github.com/user-attachments/assets/3f236dba-6fb4-4ded-9cd7-63674854ff1c" />
+
 
 ### Products Page
-![Products Page](src/main/resources/static/Images/products-page.png)
+<img width="1895" height="965" alt="Screenshot 2026-06-12 211613" src="https://github.com/user-attachments/assets/e09a4db4-c266-4568-87ca-23ecd53dabc8" />
+
 
 ### Location Page
-![Location Page](src/main/resources/static/Images/location-page.png)
+<img width="1918" height="972" alt="Screenshot 2026-06-12 211657" src="https://github.com/user-attachments/assets/35123608-eb41-4ac6-99da-e1612a6e9fe5" />
+
 
 ### About Page
-![About Page](src/main/resources/static/Images/about-page.png)
+<img width="1896" height="916" alt="Screenshot 2026-06-12 211721" src="https://github.com/user-attachments/assets/ad9dba5f-c5a1-4a16-b110-c14d5e2223d6" />
+
 
 ### Login Page
-![Login Page](src/main/resources/static/Images/login-page.png)
+<img width="1901" height="962" alt="Screenshot 2026-06-12 211741" src="https://github.com/user-attachments/assets/5d56962f-01c1-4035-bb41-37bf7178c2f1" />
+
 
 ---
 
