@@ -1,0 +1,122 @@
+@charset "ISO-8859-1";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+}
+
+.information {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 40px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    animation: slideInUp 0.6s ease-out;
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    color: #0a2342;
+    font-size: 42px;
+    margin-bottom: 20px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    border-bottom: 3px solid #f39c12;
+    padding-bottom: 15px;
+}
+
+h3 {
+    color: #1a3a52;
+    font-size: 18px;
+    margin: 15px 0;
+    font-weight: 600;
+}
+
+.information h4 {
+    color: #2c3e50;
+    font-size: 16px;
+    margin: 10px 0;
+    line-height: 1.8;
+    font-weight: 500;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 2px solid #ecf0f1;
+}
+
+.icon-box {
+    text-align: center;
+    padding: 20px;
+    flex: 1;
+    min-width: 200px;
+    background: linear-gradient(135deg, rgba(10, 35, 66, 0.1) 0%, rgba(243, 156, 18, 0.1) 100%);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.icon-box:hover {
+    transform: translateY(-5px);
+    background: linear-gradient(135deg, rgba(10, 35, 66, 0.2) 0%, rgba(243, 156, 18, 0.2) 100%);
+}
+
+.icon-box i, .icon-box span {
+    font-size: 32px;
+    color: #f39c12;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.icon-box p {
+    color: #2c3e50;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 10px 0;
+    word-break: break-word;
+}
+
+.creator-info {
+    margin-top: 50px;
+    padding: 30px;
+    background: linear-gradient(135deg, #0a2342 0%, #1a3a52 100%);
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid #f39c12;
+}
+
+.creator-info h3 {
+    color: #f39c12;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.creator-info p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 10px 0;
+}

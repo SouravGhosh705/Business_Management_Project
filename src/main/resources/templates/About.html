@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8" />
+	<title>KRYSAV : ABOUT</title>
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+	<link rel="stylesheet" href="" th:href="@{/css/Navigation.css}" />
+	<link rel="stylesheet" href="" th:href="@{/css/About.css}" />
+</head>
+<body>
+	<nav th:replace="~{Navigation::navbar()}">	
+	</nav>
+	<div class="information">
+		<h1>About KRYSAV</h1>
+		<h3>Premium Business Management Solution</h3>
+		<p>KRYSAV is a modern, innovative business management platform designed to streamline your operations and enhance productivity. With a focus on quality and user experience, we provide cutting-edge solutions for your business needs.</p>
+		
+		<h3 style="margin-top: 30px;">Our Vision</h3>
+		<p>To revolutionize business management through innovative technology and exceptional service delivery.</p>
+		
+		<h3 style="margin-top: 30px;">Why Choose KRYSAV?</h3>
+		<ul style="text-align: left; display: inline-block; line-height: 2.5;">
+			<li>✨ Modern User Interface</li>
+			<li>🚀 High Performance</li>
+			<li>🔐 Secure & Reliable</li>
+			<li>💼 Professional Support</li>
+			<li>🎯 Scalable Solutions</li>
+		</ul>
+	</div>
+	
+	<div class="icons">
+		<div class="icon-box">
+			<i class="fa-solid fa-envelope"></i>
+			<p>Contact Us</p>
+			<span style="font-size: 14px; color: #2c3e50;">support@krysav.com</span>
+		</div>
+		<div class="icon-box">
+			<i class="fa-solid fa-phone"></i>
+			<p>Call Us</p>
+			<span style="font-size: 14px; color: #2c3e50;">+91-1234-567-890</span>
+		</div>
+		<div class="icon-box">
+			<i class="fa-solid fa-location-dot"></i>
+			<p>Location</p>
+			<span style="font-size: 14px; color: #2c3e50;">Global Online Service</span>
+		</div>
+	</div>
+	
+	<div class="creator-info">
+		<h3>👨‍💻 Created By</h3>
+		<p><strong>Sourav Ghosh</strong></p>
+		<p style="font-size: 14px; opacity: 0.9;">Full-Stack Developer | UI/UX Enthusiast | Innovation Driven</p>
+		<p style="font-size: 13px; margin-top: 15px; opacity: 0.8;">Transforming ideas into exceptional digital solutions since 2026</p>
+	</div>
+	
+	<footer style="background: linear-gradient(135deg, #0a2342 0%, #1a3a52 100%); color: white; text-align: center; padding: 30px; margin-top: 50px; border-top: 3px solid #f39c12;">
+		<p>&copy; 2026 <strong>KRYSAV</strong> - All Rights Reserved</p>
+		<p>Developed by <strong>Sourav Ghosh</strong></p>
+	</footer>
+</body>
+</html>

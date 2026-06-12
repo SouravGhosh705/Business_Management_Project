@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>KRYSAV : PRODUCTS</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+	<link rel="stylesheet" href="" th:href="@{/css/Navigation.css}" />
+	<link rel="stylesheet" href="" th:href="@{css/Products.css}" />
+	
+</head>
+
+<body>
+	<nav th:replace="~{Navigation::navbar()}"></nav>
+	
+	<div class="products-header">
+		<div class="header-content">
+			<h1>Our Premium Products</h1>
+			<p>Discover our exclusive collection of high-quality items designed for professionals</p>
+		</div>
+	</div>
+	
+	<div class="products-container">
+		<div th:each="s: ${products}" class="product-card" th:data-product="${s.pname}">
+			<div class="product-image-wrapper">
+				<div class="product-icon">
+					<i th:class="${s.pname.contains('Laptop') ? 'fas fa-laptop' : (s.pname.contains('Chair') ? 'fas fa-chair' : (s.pname.contains('Lamp') ? 'fas fa-lightbulb' : (s.pname.contains('Notebook') ? 'fas fa-notebook' : (s.pname.contains('Headphone') ? 'fas fa-headphones' : 'fas fa-box'))))}"></i>
+				</div>
+				<div class="product-badge" th:text="${s.pprice > 1000 ? 'Premium' : (s.pprice > 400 ? 'Popular' : 'Best Value')}"></div>
+			</div>
+			
+			<div class="product-info">
+				<h3 class="product-name" th:text="${s.pname}"></h3>
+				<p class="product-description" th:text="${s.pdescription}"></p>
+				
+				<div class="product-footer">
+					<div class="price-section">
+						<span class="currency">₹</span>
+						<span class="product-price" th:text="${s.pprice}"></span>
+					</div>
+					<a href="/login" class="buy-button" data-product-id="" th:data-product-id="${s.pid}">
+						<i class="fas fa-shopping-cart"></i> Buy Now
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<footer style="background: linear-gradient(135deg, #0a2342 0%, #1a3a52 100%); color: white; text-align: center; padding: 30px; margin-top: 60px; border-top: 3px solid #667eea;">
+		<p>&copy; 2026 <strong>KRYSAV</strong> - Premium Products</p>
+		<p>Created by <strong>Sourav Ghosh</strong></p>
+	</footer>
+
+	<script>
+		document.querySelectorAll(".buy-button").forEach(function(button){
+			button.addEventListener("click",function(e){
+				e.preventDefault();
+				alert("Please Login as a User to purchase products");
+				window.location.href = "/login";
+			});
+		});
+	</script>
+</body>
+
+</html>

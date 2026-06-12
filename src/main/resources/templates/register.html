@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>KRYSAV : REGISTER</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+	<link rel="stylesheet" href="" th:href="@{/css/Navigation.css}" />
+	<link rel="stylesheet" href="" th:href="@{/css/Register.css}" />
+</head>
+
+<body>
+	<nav th:replace="~{Navigation::navbar()}"></nav>
+	
+	<div class="register-page-background"></div>
+	
+	<div class="register-container">
+		<div class="register-wrapper">
+			<div class="register-header">
+				<div class="register-icon">
+					<i class="fas fa-rocket"></i>
+				</div>
+				<h1>Join KRYSAV</h1>
+				<p>Create your account and start shopping premium products</p>
+			</div>
+
+			<form action="" th:action="@{/addingUser}" method="post" class="register-form">
+				<div class="form-row">
+					<div class="form-group">
+						<label for="uname">
+							<i class="fas fa-user"></i> Full Name
+						</label>
+						<input type="text" id="uname" name="uname" placeholder="Enter your full name" required>
+					</div>
+
+					<div class="form-group">
+						<label for="uemail">
+							<i class="fas fa-envelope"></i> Email Address
+						</label>
+						<input type="email" id="uemail" name="uemail" placeholder="Enter your email" required>
+					</div>
+				</div>
+
+				<div class="form-row">
+					<div class="form-group">
+						<label for="upassword">
+							<i class="fas fa-lock"></i> Password
+						</label>
+						<input type="password" id="upassword" name="upassword" placeholder="Create a password (4-8 characters)" required minlength="4" maxlength="8">
+						<small class="password-hint">Must be 4-8 characters long</small>
+					</div>
+
+					<div class="form-group">
+						<label for="unumber">
+							<i class="fas fa-phone"></i> Phone Number
+						</label>
+						<input type="tel" id="unumber" name="unumber" placeholder="Enter your phone number" required>
+					</div>
+				</div>
+
+				<div class="terms-section">
+					<input type="checkbox" id="terms" required>
+					<label for="terms" class="terms-label">
+						I agree to the <a href="#" class="terms-link">Terms & Conditions</a> and <a href="#" class="terms-link">Privacy Policy</a>
+					</label>
+				</div>
+
+				<button type="submit" class="register-submit-btn">
+					<i class="fas fa-user-plus"></i> Create My Account
+				</button>
+
+				<div class="login-link-section">
+					<p>Already have an account? <a href="/login" class="login-link">Sign In Here</a></p>
+				</div>
+			</form>
+		</div>
+
+		<div class="register-benefits">
+			<h3>Why Join KRYSAV?</h3>
+			<div class="benefits-list">
+				<div class="benefit-item">
+					<i class="fas fa-shipping-fast"></i>
+					<h4>Fast Delivery</h4>
+					<p>Get your products delivered quickly to your doorstep</p>
+				</div>
+				<div class="benefit-item">
+					<i class="fas fa-shield-alt"></i>
+					<h4>Secure Payment</h4>
+					<p>Your transactions are safe and encrypted</p>
+				</div>
+				<div class="benefit-item">
+					<i class="fas fa-undo"></i>
+					<h4>Easy Returns</h4>
+					<p>Hassle-free returns within 30 days</p>
+				</div>
+				<div class="benefit-item">
+					<i class="fas fa-headset"></i>
+					<h4>24/7 Support</h4>
+					<p>Our customer service team is always here to help</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="register-footer">
+		<div class="footer-content">
+			<p>&copy; 2026 <strong>KRYSAV</strong> - Premium Business Solutions</p>
+			<p>Created by <strong>Sourav Ghosh</strong></p>
+		</div>
+	</footer>
+</body>
+
+</html>

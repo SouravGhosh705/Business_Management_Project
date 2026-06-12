@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>KRYSAV : HOME</title>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+	<link rel="stylesheet" href="" th:href="@{/css/Navigation.css}" />
+	<link rel="stylesheet" href="" th:href="@{css/Home.css}" />
+</head>
+
+<body>
+	<nav th:replace="~{Navigation::navbar()}"></nav>
+	<div class="background">
+		<div class="text">
+			<h1>KRYSAV</h1>
+			<h3>Welcome to KRYSAV - Your Premium Business Solution</h3>
+			<p>Explore our wide range of premium products designed to enhance your life. Quality meets innovation in every product we offer.</p>
+			<a href="/products" class="cta-button">Explore Products</a>
+		</div>
+	</div>
+	
+	<footer>
+		<p>&copy; 2026 <strong>KRYSAV</strong> - Premium Business Management</p>
+		<p>Created by <strong>Sourav Ghosh</strong></p>
+		<p style="font-size: 12px; margin-top: 20px; opacity: 0.8;">All Rights Reserved | Modern UI Design | Responsive Layout</p>
+	</footer>
+</body>
+
+</html>
